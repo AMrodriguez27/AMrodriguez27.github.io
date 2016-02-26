@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-            #main{
-              background-image:url(http://40.media.tumblr.com/aea1039e363389759fcbac3ea7a5da18/tumblr_nldcm0Qrkn1rkauwdo1_500.jpg);
-              color:white;
-            }
-            #navbar{
-              background-color:#e88d8f
-            }
-            .basic{
-              color:black;
-            }
-            .who{
-              color:black
-            }
-            
-        </style>
-        
-    </head>
-    <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Mr. Yoho's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
     
-        <div id="navbar">
-             <!--Watch the Khan Academy Links Video before making links-->
-             <!--Put your list of navbar links here -->
-             <u>
-               <li><a href="https://www.google.com/?gws_rd=ssl&safe=active&ssui=on">About me</a>
-                 <li> <a href="https://www.wattpad.com/user/Lovable_geek">My work</a></li>
-                 <li><a href="./blog.html">Blog</a></li>
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./teach.html">Another Site</a></li>
-                 </u>
-            
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
         </div>
-        
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-            <h1> Amelia Rodriguez</h1>
-            <img src="http://41.media.tumblr.com/148f1c47a6a0703baf7c01351012be91/tumblr_nkfvlwDqUa1rswcqeo1_500.jpg" alt="reader"></img>
-            <h2 class="basic"><em> Basic Knowldege </em> </h2>
-            <p class="basic">I am a teenage girl at Alpha Cindy Avitia Highschool. <br>
-             I am a founding student
-            with hopes to aspire as a writer, lawyer and maybe some day take a political 
-            position. But so far I am busy being a student and keeping my grades 
-            as high as my dreams. And if you haven't noticed already I 
-            </p>
-            <h2 class="who"><em>Who Am I? </em> </h2>
-            <p class="who"> Someone yet to be important so stcik around. 
-            One day I might just be a famous writer, a kick asslawyer, or even
-            senator, because this is the kind of power a dreamer like myself gets
-            its all about the dreams.
-            </p>
-            <img src="http://27.media.tumblr.com/tumblr_m2zbgjuvJT1qdtmwjo1_r2_500.gif" alt="evil walk"></img>
-            <img src="http://images6.fanpop.com/image/photos/32400000/Once-Upon-A-Time-gifs-once-upon-a-time-32480843-500-200.gif"alt="wolf stare">
-            </img>
+        <div class="main-page">
+            <div class="image-container"></div>
             
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Mr. Yoho's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">Born and raised in Colorado and Oregon. Majored in computer science, French, and engineering physics at Whitworth University. Studied abroad at Institut National de Sciences Appliques de Lyon in Lyon France and traveled Europe extensively. Lived, taught, and coached teachers in urban and rural Mississippi.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I currently serve as the founding computer science teacher at Alpha Cindy Avitia High School, where I have the joy of working with students from all over East San Jose to discover more about computer science. I also find time to mountain bike, spend time with close friends, and occassionally play some guitar.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
         </div>
- 
-    </body>
+    </div>
+    
+    
+
+</body>
 </html>
