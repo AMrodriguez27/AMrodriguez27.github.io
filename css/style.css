@@ -14,7 +14,7 @@
 
     .navbar-outside {
       display:block;
-      background-color: #313732;
+      background-color: #3137322;
       height:80px;
     }
 
@@ -33,4 +33,29 @@
       text-decoration: none;
       float:left;
       height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color:#FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: #01f2bb;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    /* END NAVBAR CSS */
+    
+    /* FOOTER */
+    .footer{
+      min-width:600px;
+      max-width:800px;
+      margin:0 auto;
+      background-color: #313732;
+      height:50px;
+      clear:both;
     }
