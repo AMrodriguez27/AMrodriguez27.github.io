@@ -4,7 +4,7 @@
       padding:20px;
       list-style: none;
       display: inline-block;
-      background-color: white;
+      background-color: blue;
     }
 
     /* Select all child links in a nav element */
@@ -20,7 +20,7 @@
 
     .navbar {
       display:block;
-      background-color: #313732;
+      background-color: #4c4ed3;
       height:80px;
       margin:0 auto;
       min-width:600px;
@@ -45,7 +45,7 @@
     }
     
     .active {
-        background-color: #4CAF50;
+        background-color: #4cd3c2;
         color: white;
     }
     /* END NAVBAR CSS */
